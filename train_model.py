@@ -59,5 +59,4 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 history = model.fit(x_train_features, y_train, batch_size=32, epochs=40, validation_split=0.2)
 
-# Save the model
 model.save("anemia_detection_model_eye.h5")
